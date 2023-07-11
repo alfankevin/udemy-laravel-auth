@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-  <title>@yield('title') &mdash; Starter Template</title>
+  <title>@yield('title')</title>
 
   <!-- General CSS Files -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -18,23 +18,11 @@
 
 <body>
   <div id="app">
-    <div class="main-wrapper">
-      <div class="navbar-bg"></div>
-      <nav class="navbar navbar-expand-lg main-navbar">
-        @include('layouts.navbar')
-      </nav>
-      <div class="main-sidebar sidebar-style-2">
-        @include('layouts.sidebar')
-      </div>
-
-      <!-- Main Content -->
-      <div class="main-content">
-        @yield('content')
-      </div>
-      <footer class="main-footer">
-        @include('layouts.footer')
-      </footer>
-    </div>
+    <section class="section">
+        <div class="container mt-5">
+            @yield('content')
+        </div>
+    </section>
   </div>
 
   <!-- General JS Scripts -->
