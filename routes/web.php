@@ -13,26 +13,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('dashboard.home');
-// });
+Route::get('/', function () {
+    return view('auth.login');
+});
 
-// Route::get('/baru', function () {
-//     return view('dashboard.baru');
-// });
+Route::middleware(['auth', 'verified'])->group(function() {
+    Route::get('/dashboard', function() {
+        return view('dashboard.home');
+    })->name('home');
+});
 
-// Route::get('/login', function () {
-//     return view('auth.login');
-// })->name('login');
-
-// Route::get('/register', function () {
-//     return view('auth.register');
-// })->name('register');
-
-// Route::get('/forgot-password', function () {
-//     return view('auth.forgot');
-// })->name('forgot');
-
-// Route::get('/reset-password', function () {
-//     return view('auth.reset');
-// })->name('reset');

@@ -2171,6 +2171,8 @@ h6 .badge {
 }
 .dropdown-menu a {
   font-size: 13px;
+  display: flex;
+  align-items: center;
 }
 .dropdown-menu .dropdown-title {
   text-transform: uppercase;
