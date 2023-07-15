@@ -19,6 +19,9 @@
             <a href="#" class="dropdown-item has-icon">
                 <i class="far fa-user"></i> Profile
             </a>
+            <a href="#" class="dropdown-item has-icon">
+                <i class="fas fa-lock"></i> Change Password
+            </a>
             <div class="dropdown-divider"></div>
             <a href="#"
                 onclick="event.preventDefault(); document.getElementById('logout-form').submit();"
