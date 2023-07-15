@@ -18,8 +18,12 @@ Route::get('/', function () {
 });
 
 Route::middleware(['auth', 'verified'])->group(function() {
-    Route::get('/dashboard', function() {
+    Route::get('dashboard', function() {
         return view('dashboard.home');
-    })->name('home')->middleware('can:dashboard');
+    })->name('dashboard')->middleware('can:dashboard');
+
+    Route::get('edit-profile', function() {
+        return view('dashboard.profile');
+    })->name('profile.edit');
 });
 

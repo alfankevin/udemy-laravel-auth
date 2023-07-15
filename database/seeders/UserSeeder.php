@@ -20,6 +20,8 @@ class UserSeeder extends Seeder
             'name' => 'Super Admin',
             'email' => 'superadmin@gmail.com',
             'email_verified_at' => now(),
+            'phone' => '081234567890',
+            'bio' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sint laboriosam at doloribus doloremque totam.',
             'role' => 'superadmin',
             'password' => Hash::make('password'),
         ]);
@@ -28,14 +30,18 @@ class UserSeeder extends Seeder
             'name' => 'Admin',
             'email' => 'admin@gmail.com',
             'email_verified_at' => now(),
+            'phone' => '081234567890',
+            'bio' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sint laboriosam at doloribus doloremque totam.',
             'role' => 'admin',
             'password' => Hash::make('password'),
         ]);
 
         User::create([
             'name' => 'Test User',
-            'email' => 'test@example.com ',
+            'email' => 'test@example.com',
             'email_verified_at' => now(),
+            'phone' => '081234567890',
+            'bio' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente sint laboriosam at doloribus doloremque totam.',
             'role' => 'user',
             'password' => Hash::make('password'),
         ]);

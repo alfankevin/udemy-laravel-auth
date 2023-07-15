@@ -21,6 +21,7 @@
               An email verification link has been emailed to you!
             </div>
           @endif
+          
           <form method="POST" action="{{ route('verification.send') }}" class="needs-validation" novalidate="">
             @csrf
             <div class="form-group">
