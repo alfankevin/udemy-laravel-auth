@@ -198,13 +198,13 @@
 @endsection
 
 @push('customCss')
-    {{-- <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-social.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/summernote-bs4.css') }}"> --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.css">
+    {{-- <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-social.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/summernote-bs4.css') }}"> --}}
 @endpush
 
 @push('customJs')
-    <script src="{{ asset('assets/js/summernote-bs4.js') }}"></script>
-    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.js"></script> --}}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.js"></script>
+    {{-- <script src="{{ asset('assets/js/summernote-bs4.js') }}"></script> --}}
 @endpush

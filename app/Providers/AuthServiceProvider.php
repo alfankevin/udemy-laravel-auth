@@ -11,8 +11,7 @@ use Illuminate\Support\Facades\Gate;
 class AuthServiceProvider extends ServiceProvider
 {
     public static $permissions = [
-        'dashboard' => ['admin'],
-        'index-user' => ['superadmin'],
+        'index-user' => ['admin'],
     ];
 
     /**
